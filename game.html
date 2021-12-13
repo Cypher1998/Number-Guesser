@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <title>Observer Pattern</title>
+    <style>
+      .message {
+        font-size: 17px;
+        white-space: pre-wrap;
+      }
+      #counter {
+        margin-top: -10px;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="text-center">
+            <img src="img/loading.gif" />
+          </div>
+          <div class="card game-body mt-4">
+            <div class="card-body">
+              <span class="h3 text-primary" id="counter"></span>
+              <div class="mb-2">
+                <h1 class="text-center mb-3">Number Guesser</h1>
+                <label for="input" class="lead"
+                  >Enter a number between <span class="min-num"></span> and
+                  <span class="max-num"></span
+                ></label>
+                <input
+                  id="guess-input"
+                  type="number"
+                  class="form-control my-2"
+                />
+                <pre class="info mb-1"></pre>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="col">
+                  <input
+                    id="play-btn"
+                    type="submit"
+                    value="SUBMIT"
+                    class="btn btn-outline-success"
+                  />
+                  <button
+                    id="continue-btn"
+                    type="button"
+                    class="btn btn-outline-warning"
+                  >
+                    CONTINUE
+                  </button>
+                </div>
+                <div>
+                  <button
+                    id="pause-btn"
+                    type="button"
+                    class="btn btn-outline-danger"
+                  >
+                    PAUSE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
